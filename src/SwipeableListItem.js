@@ -58,7 +58,7 @@ class SwipeableListItem extends PureComponent {
   }
 
   componentDidMount() {
-    this.wrapper.addEventListener('mousedown', this.handleDragStartMouse);
+    // this.wrapper.addEventListener('mousedown', this.handleDragStartMouse);
 
     this.wrapper.addEventListener('touchstart', this.handleDragStartTouch);
     this.wrapper.addEventListener('touchend', this.handleDragEndTouch);
@@ -75,7 +75,7 @@ class SwipeableListItem extends PureComponent {
       this.requestedAnimationFrame = null;
     }
 
-    this.wrapper.removeEventListener('mousedown', this.handleDragStartMouse);
+    // this.wrapper.removeEventListener('mousedown', this.handleDragStartMouse);
 
     this.wrapper.removeEventListener('touchstart', this.handleDragStartTouch);
     this.wrapper.removeEventListener('touchend', this.handleDragEndTouch);
